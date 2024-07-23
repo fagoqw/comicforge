@@ -1,6 +1,47 @@
-path('<int:pk>/edit/', views.comic_edit, name='comic_edit'),
-    path('<int:pk>/detail/', views.comic_detail, name='comic_detail'),
-    path('<int:pk>/add_panel/', views.panel_add, name='panel_add'),
-    path('<int:pk>/edit_panel/<int:panel_pk>/', views.panel_edit, name='panel_edit'),
-    path('<int:pk>/delete_panel/<int:panel_pk>/', views.panel_delete, name='panel_delete'),
-]
+/* Определите базовые стили для всего сайта */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Определите стили для отдельных элементов */
+
+.comic-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comic-list li {
+    margin-bottom: 20px;
+}
+
+.comic-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.text-element {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* ... Добавьте стили для других элементов */
