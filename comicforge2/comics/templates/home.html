@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Create comics with ComicsForge</h1>
+
+<form method="post" action="http://127.0.0.1:8000/comics/create/1/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">CREATE COMICS NOW</button>
+</form>
+
+{% endblock %}
